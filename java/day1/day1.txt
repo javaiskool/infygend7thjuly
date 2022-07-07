@@ -1,0 +1,209 @@
+
+
+working priciple of a computer
+input - process - output
+input- use the raw data and info provided 
+output - as per expected outcome
+process - we will write the instructions
+
+program - solution to a problem or set of instructions for performing perticular task
+instructions - step by step, precise
+logic -right direction of thinking
+
+JAVA progamming language
+language - medium of communication
+	vocab, grammer, style
+
+JAVA - program - source code - simple  structured English language following a perticular programming. here JAVA is the language of source code
+
+program communite with hardware
+program - converted to machine understaable set of instructions - OS - HW
+
+conversion  has 2 steps 
+compilation - bytecode - machine independent
+interpretation - executanle code - machine dependent
+execute the code
+
+program - complilation - interpretation & execution
+
+JAVA - Prog. Lang.
+concepts - general programming concepts
+	Object Oriented concepts
+	JAVA concepts
+implementation of these concepts wrt JAVA
+
+General Programming concepts
+1. seuential execution
+all the statements written are executed in the same sequence they are written
+2. selection
+3. iteration
+
+keywords - reserved words in a particular prog. lang. they have specific meaning and used in specific manner for specific purpose. 
+e.g. -> try class do 
+
+variables - name of memory location, hold some value, can be changed at execution.
+e.g. x =2,  sname, age=20 
+3 steps to use a variable 
+declare, initialize, use
+rule - variables should be initialized before use
+
+identifiers - names given to variables, class, method 
+rules - 
+a-z, A-Z, 0-9, _, $
+should not start with digit
+should not be JAVA keyword 
+case sensitive
+no length restriction - preferable 8-15, useful, meaningful
+conventions 
+class - starts with capital letter
+variable - multiword then each inner word starts with capital letter (called as camel case)
+sname => sname   age => age
+studentname  => studentName 
+studentprojecttitle => studentProjectTitle
+
+data types
+
+first JAVA program
+class Welcome{
+public static void main(String args[])
+{System.out.println("Welcome to JAVA programming");}}
+
+first JAVA program with indentation
+class Welcome
+{
+	public static void main(String args[])
+	{
+		System.out.println("Welcome to JAVA programming");
+	}
+}
+
+
+things to note 
+classname started with capital letter => Welcome
+indentation => leaving spaces while writing differnt lines of code. this increases readability of the code and not complusary.
+main => execution of java program starts with main method. so main method is called as entry point of execution.
+outcome => to display Welcome to JAVA programming message on S.O.D.
+Standard input device (S.I.D.) keyboard
+standard output device (S.O.D.)- monitor
+
+block
+{
+}
+
+datatypes
+tells about type of value stored, range of value that can be stored, memory occupied for a variable
+
+categories
+primitive, basic data types
+numeric, character, boolean
+data type  type of value value range 	memory occupied 
+boolean    logical       true/false	1 bit		boolean s=true;
+example 
+declaration => datatype variablename; => boolean status;
+initialize => variablename=value; => status=true;
+declaration with initialization => datatype variablename=value; => boolean check=false;
+combination => booelan status,check,remark=true;
+
+use => System.out.println(status);
+
+char	character	printable single character	1 byte
+
+char ch='A';
+
+numeric default value for all numeric datatypes is zero
+byte   	whole numbers 2^^7 to (2^^7)-1  -128 to 127  1 byte byte b=120;
+short 	whole numbers 2^^15 -32768 to 32767 2 bytes short s=30000;
+int   	whole numbers 2^^31
+long  	whole numbers 2^^63  long lv=7788665599L;
+float 	fractional numbers float fl=3.142f; upto 6 decimal places
+double 	fractional numbers double dl=3.3333333333333; upto 15 decimal places
+
+
+operators 
+binary operatiors works on 2 operands
+operand1 operator operand2
+4 + 5, x - 7, y * z
+arithmetic operators (binary)
+numeric operands => numeric result
+operation	symbol	example	result/answer
+addition 	+	4 + 5	9
+subtraction 	-	10-3	7
+multiplication	*	2*10	20
+division 	/	6/3	2
+remainder	%	5%2	1
+
+x+y-3*5/r
+
+comparison operators / relational operators (binary)
+
+operation		symbol	example 	result
+equality		==	x==5		boolean
+less than		<	y<8		boolean
+greater than		>	9>4		true
+lessthan or equal to 	<=	7<=7		true
+greater than or equal to >=	200>=370	false
+not equal to 		!=	9!=9		false
+
+x<y<z => not supported
+
+logical operators 
+exp1/con1 operators exp2/con2 => boolean
+and (binary)
+and &&	exp1 && exp2  	x>6 && y<10
+exp1 	exp2 	result
+true 	true	true
+true	false	false
+false	true	false
+false	false	false
+if first condition is evaluated to true only then second condition is checked
+
+or (binary)	||	exp1 || exp2	x<0 || x==0
+exp1	exp2	result
+true	true	true
+true	false	true
+false	true	true
+false	false	false
+if first condition is evaluated to false only then second condition is evaluated
+
+not (unary)
+exp1 	result
+!true	false
+!false	true
+
+assignment operators LHS variable RHS value/var/exp;
+equal to = var=value
+shorthand assignment operators
++= x+=5 => x=x+5;
+-= y-=x	=> y=y-x;
+*= x*=10 => x=x*10;
+/= x/=y => x=x/y;
+%= p%=q => p=p%q;
+
+
+increment  (unary)
+++x prefix before using the var the value will be incremented
+x=3 y=++x => x=x+1 y=x => x=4 y=4
+
+x++ postfix after using the var the value is incremented
+x=3 y=x++ => y=x x=x+1 => x=4 y=3
+
+
+decrement (unary)
+--x prefix before using the var the value will be incremented
+x=3 y=--x => x=x-1 y=x => x=2 y=2
+
+x-- postfix after using the var the value is incremented
+x=3 y=x-- => y=x x=x-1 => x=2 y=3
+
+type conversion
+int x=100,y; short s=200,t;
+smaller to bigger conversion takes place implicitly without loss of data
+y=s; => y=200
+
+bigger to smaller conversion has to be specified explicitly 
+	if the value is in the range of smaller datatype then conversion will be without loss of data
+t=(short)x; => t=200
+	if the value is out of range of smaller datatype then conversion will be with loss of data
+int x=200000;short t;
+t=(short)x; => t=value t will take is with loss of data 
+
