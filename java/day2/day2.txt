@@ -1,0 +1,175 @@
+selection
+to skip some of the statements or execute set of statements based on condition
+condition checking constructs
+---if construct
+if (condition/s)
+{
+true block
+
+}
+--- if else construct
+if (condition/s)
+{
+true block
+
+}
+else
+{
+false block
+
+}
+----- multiple if
+if (condition1/s)
+{
+
+
+}
+if(condition2/s)
+{
+
+
+
+}
+if (condition/s)
+{
+
+
+
+}
+------nested if (if within another if)
+
+if(condition1)
+{
+	------
+	if(condition11)
+	{
+	
+	}
+	else
+	{
+		
+	}	
+	-----
+}
+else
+{
+	------
+	if(condition2)
+	{
+	
+	}
+	else
+	{
+		
+	}	
+	-----
+}
+always works if the answer to the condition is evaluated as true or false
+multiple conditions can be written with single if. the final logical result will be considered.
+to execute single statement in if or else part writing {} is optional.
+
+----- switch case
+works fine when condition is evaluated in terms of choice and not true or false
+
+switch (var)
+{
+	case option1:
+		----
+		----
+		break;
+	case option2:
+		----
+		----
+		break;
+	default:
+		----
+		----
+}
+switch can be used with byte,short,int,long,char, string.
+case cannot have relational operators
+if with a particular case break statement is not found, all the statements in all following cases are executed till break statement is encountered
+
+iteration
+execution of set of statements repeatedly. implemented using looping constructs
+
+for (initial value;final value/stopping value;incremet/decrement)
+{
+	----
+	----
+	----
+}
+
+System.out.println("hello" );
+System.out.println("hello" );
+System.out.println("hello" );
+System.out.println("hello" );
+System.out.println("hello" );
+
+how many times to repeat => 5
+
+when no. of times to repeat statements in a bolck is known generally for loop is used.
+generally works with the concept of counter
+it will consider initial value for the first iteration. (initial value is considered only once for the first iteration.)
+the stopping condition is checked. if the stopping condition is satisfied, the for block statements are executed.
+then the increment/decrement is done. again the stopping condition is checked.if the stopping condition is satisfied, the for block statements are executed.
+when the stopping condition is not statisfied the loop execution stops. the program execution continues after loop.
+ 
+int i;
+System.out.println("before loop");
+for (i=1;i<=5;i=i+1)
+{
+	System.out.println("hello" );
+}
+System.out.println("after loop");
+dry run
+
+i	o/p
+	before loop
+1	hello
+2	hello
+3	hello
+4	hello
+5	hello
+6
+	after loop
+------------------------------
+while loop
+condition based loop. the condition is evaluated first, if the result is true only then the statements in the while block are executed.
+there should be provision to make the while condition false at some point of time. if not it becomes endless loop.
+
+while (condition/s)
+{
+
+
+provision to make while condition false.
+}
+
+int i=1;
+while (i<=5)
+{
+System.out.println("hello");
+i=i+1;
+}
+-------------
+do
+{
+
+
+
+provision to make the while condition false
+
+}while(condition);
+
+similar to while , only difference is the statements in do block are executed at least once. then the condition is evaluated. if the condition is true then the next iteration is considered.
+
+nesting of loops is posiible. any loop can be nested with any other loop.
+loops are closely associated with array handling, specifically for loop.
+inner loop is re initialized for every iteration of outer loop
+
+break and continue in the loop (any loop)
+in a loop when break statement is encountered the loop executioon stops and program execution continues after the loop.
+
+in a loop when continue statement is encountered then the statements in the loop after continue statement are not executed, the next iteration of the loop continues.
+
+
+

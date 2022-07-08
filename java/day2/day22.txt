@@ -1,0 +1,93 @@
+object oriented programming
+
+the importance in solution is given to object more than subject
+why oops?
+--reusability
+--in case of lengthy and complex systems updation, correction, incorporating new features becomes easy
+--real life entity mapped in programming construct 
+-- closely associated with app. development
+
+features of OOPs
+pillars
+encapsulation
+abstraction
+polymorphism
+inheritance
+
+class/object
+	employee, student
+	book, item
+	loan_account, bank_account
+	measurement units, dates, time, money
+
+real life entity has properties, operations, events
+employee 
+** properties - employee number, employee name, salary, department, city, joining date, dirth date
+** operations - display employee information, update salary, send message, change city
+mapping entity into programming construct
+
+**class - list of properties and operations applicable to  all employees is maintained in a design or unit  
+class is user defined datatype 
+to use the class i.e. to declare the objects folloing syntax is used
+classname object_ref_name=new classname();
+datatype  varname        = initialization
+new classname() => all the member variables of the class are initialized with default value of each individual repective datatype
+to call a method use the form => object_ref_name.methodname();
+numeric => zero
+String => null
+boolean => false
+
+class has member variable - property
+	methods - operations
+
+**object/instance - actual data of individual employees is stored  
+
+class Classname
+{
+	member variables/ instance variables
+	methods
+}
+method has signature
+return_datatype methodname(parameter list// local variables)
+{
+	declaration;
+	executable statements;
+}
+
+void calculate_sum(money)
+{
+calculate
+
+}
+sum calculate_sum(money)
+{
+calculate
+return sum
+}
+void calculate_sum()
+{
+take your money
+calculate
+}
+
+sum calculate_sum()
+{
+take your money
+calculate sum
+return sum
+}
+
+
+to use method - define the method
+
+
+class Emp
+{
+	int empNo;
+	String empName;
+	float salary;
+	String city;
+
+
+
+
