@@ -1,0 +1,61 @@
+constrcutor
+special method in a class that is used to initialize instance variables of the object.
+
+how to define the constructor method?
+method signature => return_datatype methodname(parameterlist)
+method			void displayEmpInfo()
+constructor => 	Emp() //parameterless or default constructor 
+		Emp(int en,String enm) //parameterised constructor1
+		Emp(int eno,String ename,float sal) // parameterized constructor2
+		Emp(String ename,int eno)  // parameterized constructor3
+
+how many constructors?
+many constructors cam be written provided the parameter list should be different in either no. of parameters or type of parameters or sequence of parameters
+	
+it do not have any return type specification
+it has same name as class name
+it can take parameters
+parameterless constrcutor => Emp(){initialization of instance variables for particular object  }
+parameterised constructor => Emp(parameters){initialization of instance variables for particular object  }
+
+how to use it or call it?
+constructor is always called implicitly when the memory allocation is done for the object with new keyword. it is called only once at the time of instanciation.
+
+Emp e=new Emp();
+
+Emp => classname
+e =>object reference of classtype
+new => operator use to allocate memory to all instance variables
+Emp() => implicit call to the constructor for initialization of all the instance variables for the particular object 
+
+
+if not a single constructor is provided, then JAVA uses parameterless constructor to initialize all instance variables with default value of respective datatype on its own.
+if parameterised constructor is provided then JAVA will not provide dafault constructor , if you want to use it, then it is to be written by the programmer explicitly.
+
+about parameters
+if instance variable names and constructor parameter name (i.e. local variable ) is same then always local variable will get precedence. to initialize or refer instance variable keyword this is to be used.
+eno=eno; => instance variable eno will not be initialized with passed value.
+this.instance var naame=local var / parameter =>this.eno=eno; => this keyword refers to current or invoking object. so it initializes the instance variable eno.
+
+
+
+this keyword
+** this keyword is used to refer instance variables of invoking or current object.
+
+** this(parametelist) can be used to call one constructor from another provided
+it should be the first statement in the calling constrcutor.
+the parameter list should match with one of the constructors written
+there should not be cyclic reference.
+it can be used only within the constructor.
+
+** this keyword can be used to call a method from another method.
+it is not mandetory to write it as first statament as in case of constructor
+the methodname & parameters should match with some method written in the class
+it is not compulsary to use this keyword, but it is always a better practice.
+
+memory management
+allocation of memory, releasing the memory
+Emp e=new Emp();
+e => reference variable 
+new Emp() =>  memory will be allocated to all instance variables and initialization of these instance variables will be done using constructor.
+e=null;

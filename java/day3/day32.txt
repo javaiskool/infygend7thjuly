@@ -1,0 +1,34 @@
+pillars of OOPs
+
+## encapsulation
+keeping together data and its functionality. data in terms of member variables and functionality in terms of methods
+* prevent unauthorized access 
+* no direct access is provided to sensitive data
+* provided restricted access through 
+
+## accees modifiers
+	private - members are accessible directly only within the class.
+outside the class they are accessible through non-private methods of the class. always through object
+	public - members are directly accessible within the class and outside the class. outside the class through object
+	default/ package - whenever you do not specify access modifier it is default. accessible directly within the class. accessible to other classes within the package through object.
+	protected - associated with inheritance
+
+generally instance variables are declared with private access modifier
+constructors and methods are declared with non-private access modifiers to facilitate accessing private instance variables outside the class
+
+encapsulation is also called as data hidig, as data in one class can be hidden from another class
+
+to access private instance variables use non-private methods. 
+by convention to read/retrive/get the value of private instance variable we use getter/accessor methods. 
+public returndatatype getVarName(){return varname;}
+public String getEname(){return ename;}
+
+write/save/store/modify/update value of instance variable use setter/mutator methods
+public void setVarName(Datatype prvarname){this.insvarname=parvarname;}
+public void setSalary(float salary){this.salary=salary;}
+
+## abstraction
+to provide only necessary information about the class members to the users. i.e. only method name, parameter details, return values and purpose is to be known by the users. working details of the method are hidden.
+
+Tester class is the user of Emp class. 
+
