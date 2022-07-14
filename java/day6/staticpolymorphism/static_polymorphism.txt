@@ -1,0 +1,39 @@
+polymorphism
+poly => many
+morph => forms
+
+many forms => single task
+if a single task can be performed in differnt multiple ways, then they can be represented with common name and different parameter list
+
+example
+suppose some object id drawn on the paper. to paint the objet we can use different ways.
+task => paint a drawing object
+ways => 
+way1 paint with BLUE colour
+public void paintWithColourName(String cname)
+way2 paint with RGB combination 
+public void paintWithRGB(int r,int g,int b)
+way3 paint with colour code
+public void paintWithColourCode(int ccode)
+
+polymorphism => 
+public void paint(String cname)
+public void paint(int r, int g,int b)
+public void paint(int ccode)
+
+static polymorphism
+method overloading => in a single class there can be multiple methods with same name and different parameter list to represent multiple ways of performing same task
+provided the parameter list is different in no. of parameters/datatype of parameters/sequence of parameters.
+constructor overloading
+in a single class we can write multiple constructors.
+
+the compiler will bind the appropriate method with the invoking object based on parameter specification.
+method overloading is not recognized by difference in return datatype.
+
+the binding of reference variables and method takes place at compile time. so it is called as compile time polymorphism/early binding/static polymorphism
+
+
+
+
+
+	
