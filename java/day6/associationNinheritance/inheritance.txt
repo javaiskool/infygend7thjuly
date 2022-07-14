@@ -1,0 +1,62 @@
+** inheritance
+-- using properties & functionalities of existing class in another class 
+-- with the access to all non-private proerties & functionalities as if they are its own design
+-- "is a " type of relationship
+-- Emp - Programmer => programmer is an employee
+-- Emp class is inherited to Programmer class 
+	or
+Programmer class is inheriting Emp class
+
+-- Emp class is super class/ base class/ parent class
+--Programmer class is sub class/derived class/child class
+=> non-private members of Emp class are directly accessible in Programmer class as if they are its own members
+-- implementation of reusability
+-- syntax 
+	class Emp
+	{
+
+	}
+	class Programmer extends Emp
+	{
+
+	}
+rules 
+-- a class can inherit only one class
+-- super class do not have access to members of sub class
+
+implementation specifications
+--when object of subclass is created first default constructor of superclass is invoked implicitly, then the statements in the subclass constructor are executed
+-- to call parameteized constructor of superclass super keyword is used as follows.
+ super(parameters); 
+above statement should be the first statement in the subclass constructor.
+
+convention
+in inheritance object of superclass is very rarely used.
+generally functionality of superclass is used through object of subclass
+
+types of inheritance
+# single inheritance
+one superclass one subclass A-B  Emp-Programmer
+Emp(eno,ename,sal)
+Programmer(skill)
+
+# hierarchical inheritance
+one superclass two or more subclasses A-B A-C A-B,C
+Emp(eno,ename,sal)
+Programmer(skill)
+Tester(software)
+
+# multilevel inheritance
+superclass-subclass subclass becomes superclass and will have another class as subclass
+A-B B-C
+Emp(eno,ename,sal)
+Programmer(skill)
+TeamHead(teamsize)
+
+# multiple inheritance
+one class can inherit properties from many classes
+it is not supported in JAVA
+
+
+
+

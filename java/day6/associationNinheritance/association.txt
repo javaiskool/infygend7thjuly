@@ -1,0 +1,12 @@
+Association
+in association the classes communicate through methods. i.e. for functionality of one class it can use object of another class
+
+uses a relationship
+
+emp has gadget          aggregation
+salary uses employee    association
+
+order has food  aggregation
+bill uses order association
+
+
