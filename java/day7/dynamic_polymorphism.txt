@@ -1,0 +1,30 @@
+dynamic polymorphism
+the binding of ref var and method call will take place at runtime. called as runtime polymorphism/ late binding/ dynamic polymorphism
+
+method overriding => inheritance
+when the superclass and subclass has method with exactly same signature i.e. methodname and the parameter list is same. then the method call is finalized at runtime.
+this is useful when subclass needs to provide deperate or different implementation for the method in the superclass.
+
+inplementation
+case 1=> reference and object of superclass 
+can access non-private methods of superclass 
+case 2 => reference and object of subclass
+can access non-private methods from superclass and non-private methods of subclass, overridden methods from subclass
+case 3 => reference of superclass and object of subclass 
+can access non-private methods of superclass and only overridden methods from subclass
+
+rules
+static methods are not overridden
+the method should not have weaker access modifier in subclass
+for overriding the method signature should match exacly i.e. return datatype, methodsname and parameterlist should match.
+if parameter list is different then it is overloading not overriding
+if return datatype is different then it throws error.
+
+note
+overriding is available for methods. members variables with same name in inheritance follow static binding. i.e. they will take values as per the reference.
+
+conventions
+generally with inheritance creating the object/instance of superclass is not a good practice.
+
+
+

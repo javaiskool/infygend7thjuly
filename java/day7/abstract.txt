@@ -1,0 +1,25 @@
+abstract keyword
+
+if all the subclasses have provided seperate implementation for the method in superclass, then superclass method  implementation is not significant. also implementing the method should be enforced in each class.
+in this scenario the method can be declared as abstract
+
+implementation 
+this can be done using abstract keyword
+a method with abstract keyword should provide only method signature , definition even blank definition should not be provided.
+
+in a class when a method is declared as abstract the class also has to be declared as abstract to notify incompleteness.
+
+rules
+an abstract method has only declaration of method signature.
+accessmodifier abstract returntype methodname(parameters);
+the class should be declared with abstract keyword
+abstract class Emp{   }
+abstract class cannot be instanciated. only reference can be used.
+abstract class enforces inheritance. and abstract methods enforces overriding.
+the subclass should provide definition of all the abstract methods of the superclass
+otherwise that subclass also becomes abstract. 
+
+
+
+
+ 

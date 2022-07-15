@@ -1,0 +1,16 @@
+final keyword
+used to represent constant
+final keyword can be used in 3 ways
+1 final variable
+when a veriable is declared as final its value once initialized cannot be changed later
+
+final access modifier datatype varname;
+
+2 final method
+when a method is declared as final it cannot be overriden
+final access modifier returnvalue methodname(parameters)
+
+3 final class
+when a class is declared as final it cannot be inherited.
+final public class Tester
+final class Emp

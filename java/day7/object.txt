@@ -1,0 +1,16 @@
+Object class
+Object is implicit superclass of all the classes
+provides methods which can be overridden to provide differnt implementations
+equals() => 
+its compares contents for equality e.g. String
+can be used with object of any class
+
+hashCode() => 
+generate hash code i.e. 32 bit integer 
+if equals() methods returns true the hashcode generated for 2 obj will be same
+if hashcode generated for 2 obj is same it dose not imply that equals() will return true
+uses some formula to generate the integer
+
+toString() =>
+returns text about the object => returns String with format Emp@code
+it can be overridden to represent the object in meaningful and useful manner
