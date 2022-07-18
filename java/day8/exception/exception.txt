@@ -1,0 +1,67 @@
+errors
+compile time errors 
+syntax
+rule based
+
+run time errors
+logical errors => unexpected output
+rectified by debugging, dry run
+
+errors related to user input/data access/resource handling
+some times the behaviour of the program is unpredictable as it is communicating with outside resource
+
+when the error occurs the program terminates with error message which is not clearly understandable
+for handling of these type of errors we use exception handling
+the program acn provide the mechanism through which it can communicate about the arror in user friendly manner
+the rest of the program execution may continue
+you can provide action to be taken
+
+exception keywords
+try 
+catch
+finally
+throw
+throws
+
+try
+try is a block where the statements which might throw exception shall be enclosed.
+if any of the statement throws an exception the remaining statements in the try block are not executed.
+try
+{
+	statements;
+}
+catch
+catch block should immediately follow a try block to catch the exception thrown by a statement in th try block
+every try block should have at least one catch block which can handle the exception i.e. a matching catch for particular exception
+there can be miltiple cath blocks following a try block which can handle differnt type of exceptions.
+a catch block with Exception class can be provided which can handle many type of exceptions. 
+if multiple catches are provided including Exception then it should be the last catch.
+it is a good practice to provide multiple catch blockd so that differnt mechanisms can be provided to handle differnt type of exceptions.
+
+finally
+is a block which optionally follows try-cat blocks 
+whether or not an exception is thrown statements in finally block are executed.
+generally used for releasing resources, performing some crucial closing task related to exception
+
+
+
+catch(Exception e)
+{}
+
+
+Exception => super class of differnt type of exception and subclass of Throwable
+ 
+
+throw
+to handle user specified exceptional situation an instance of appropriate exception class can be created and thrown out of try block.
+throw new Exception("message");
+
+types of exceptions in Java
+unchecked - runtime exceptions which are not checked  at compile time.
+e.g. ArithmeticException, NumberFormatException, NullPointerException
+
+checked - exceptions other than runtime which are checked at compile time.ie it is mandatory to hanle exception while using input/output or database resources. it will be checked at compile time.
+e.g. IOException SQLException
+
+
+ 

@@ -1,0 +1,36 @@
+package
+
+to group related classes and interfaces
+to resolve name conflict to have classes or interfaces with same name in different groups
+
+syntax 
+package packagename;
+
+example
+package pkg1;
+
+rules
+it should be the first statements in the source file
+classes with public and default access modifiers are accessible across different packages 
+
+to access a class or interface from other package the import statement is used.
+
+access all the classes and interfaces from the imported package
+import packagename;
+import pkg2;
+
+a specific class can be made accessible from the imported package
+import package.classname;
+import pkg2.D;
+
+acces the properties with full name
+pkg2.D d1=new pkg2.D();
+
+
+private properties are directly accessible only within the class. outside the class through non-private methods
+
+public properties are accessible to all the classes (in the same package as well as in other packages).
+
+protected properties are accessible to all the classes in the same package and subclass in other packages.
+
+default/package properties are accessible to all the classes only within the same package

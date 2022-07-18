@@ -1,0 +1,24 @@
+interface
+has all methods abstract 
+all variables are public static final
+complete designer class
+interface cannot be instanciated. its deisgn is to be used through inheritance
+it provides generic template to be implemented by many classes
+multiple inheritance in case of interfaces i.e. inheritig multiple interfaces is supported in java
+for inheriting interface the keyword used is implements
+
+class 
+a class can inherit only one class 
+=> class A extends class B
+a class can inherit one or more interfaces 
+=> class A implements inf1,inf2
+a class can inherit one class and one or more interfaces
+=> class A extends B implements inf1,inf2
+
+interface
+an interface can inherit one or more interfaces
+=> interface inf1 extends inf2,inf3
+interface to class => implements
+ 
+
+ 
